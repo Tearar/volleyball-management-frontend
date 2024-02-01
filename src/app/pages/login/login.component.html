@@ -1,0 +1,31 @@
+<div style="position: relative; width: 100%; height: 100vh;  background-color: rgb(24 24 27);
+  opacity: 90%;">
+  <img style="position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  mix-blend-mode: overlay;" src="./assets/vcw-arena.png"/>
+  <div style="display: flex; justify-content: center; align-items: center; height: 100%">
+    <div style="max-width: 400px; width: 100%; margin: 10px;; background: white; padding: 8px">
+      <h2 style="font-size: 1.875rem; /* 30px */
+line-height: 2.25rem; /* 36px */font-weight: 700; text-align: center; color:black; margin-bottom: 4px;">Load
+        Monitoring</h2>
+      <h4 style="font-size: 1.200rem; /* 30px */
+line-height: 2.25rem; /* 36px */font-weight: 400; text-align: center; color:black; margin-bottom: 4px;">VC
+        Wiesbaden</h4>
+      <div style="display:flex; flex-direction: column; margin-bottom: 4px;">
+        <mat-form-field class="example-form-field">
+          <mat-label>Username</mat-label>
+          <input matInput type="text" [(ngModel)]="username">
+        </mat-form-field>
+      </div>
+      <div style="display: flex; flex-direction: column;">
+        <mat-form-field class="example-form-field">
+          <mat-label>Password</mat-label>
+          <input matInput type="text" [(ngModel)]="password">
+        </mat-form-field>
+        <button mat-raised-button color="primary" (click)="handleLogin()">SIGN IN</button>
+      </div>
+    </div>
+  </div>
+</div>
